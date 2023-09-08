@@ -20,4 +20,7 @@ for i in range(len(members)):
 #Saving new file with attendance figures
 members.to_csv('NHS Member Attendance Filtered.csv', index=False)
 
-print(didntAttend)
+count = 1
+for item in didntAttend:
+  print(str(count) + ") " + item + "\n")
+  count += 1
